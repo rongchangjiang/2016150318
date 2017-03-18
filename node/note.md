@@ -79,3 +79,31 @@ vi index.txt
 i 编辑模式
 esc + :wq 保存并退出
 ```
+
+
+## 分支管理
+- 查看分支
+```
+git branch 
+```
+- 创建分支
+```
+git branch <branchName>
+```
+- 切换分支
+```
+git checkout <branchName>
+```
+- 删除分支（不能自己删除自己）
+```
+
+git branch -D <branchName>
+```
+- 创建并切换(相当于将当前内容克隆一份)
+```
+git checkout -b <branchName>
+```
+- 在master上合并dev分支
+```
+git merge dev
+```
