@@ -107,3 +107,4 @@ git checkout -b <branchName>
 ```
 git merge dev
 ```
+- 产生冲突(手动解决提交新的版本)
