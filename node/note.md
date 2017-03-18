@@ -77,7 +77,7 @@ git reset --hard 版本号
 ```
 vi index.txt
 i 编辑模式
-esc + :wq 保存并退出
+esc + :wq 保存并退出  强制退出q!
 ```
 
 
@@ -108,3 +108,28 @@ git checkout -b <branchName>
 git merge dev
 ```
 - 产生冲突(手动解决提交新的版本)
+
+## 创建仓库
+- 创建空仓库，写一个仓库名
+```
+new repository
+```
+
+- 本地要建一个README.md .gitignore
+```
+echo '.idea' >> .gitignore
+echo 'welcome' >> README.md
+```
+
+- 提交并关联仓库
+```
+git add .
+git commit -m ''
+git remote add origin 地址
+git remote -v 查看所有关联
+git remote rm origin 删除
+```
+- 推送到远程仓库上
+```
+git push origin master -u(upstream 下次提交不必再输入origin master)
+```
