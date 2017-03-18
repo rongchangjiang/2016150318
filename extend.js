@@ -21,7 +21,7 @@ Child.prototype = new Parent();
 Parent.call(this);
   3.只继承父亲公有的方法
 Child.prototype.__proto__ = Parent.prototype;
-Child.prototype = Object.create(Parent.prototype); es5
+Child.prototype = Object.create(Pxarent.prototype); es5
 Object.setPrototypeOf(Child.prototype,Parent.prototype); es6
 extends es6
 * */
